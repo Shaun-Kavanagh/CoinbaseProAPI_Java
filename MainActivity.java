@@ -17,7 +17,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    OrderMe();
+                    //get order params
+                   // String size= "0.01";
+                    String funds = "10.00";
+                    String price="0.100";
+                    String product_id="BTC-EUR";
+                    String side="sell";
+                    OrderMe(funds,side,product_id );
                     convertMe();
                     testMe();
 

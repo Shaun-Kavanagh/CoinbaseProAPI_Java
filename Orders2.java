@@ -44,14 +44,15 @@ public class Orders2 {
     }
 
     @TargetApi(Build.VERSION_CODES.O)
-    private OrderService[] getOrders() throws IOException, InvalidKeyException, NoSuchAlgorithmException, JSONException {
+    private OrderService[] getOrders(String funds, String side, String product_id) throws IOException, InvalidKeyException, NoSuchAlgorithmException, JSONException {
         String timestamp = Instant.now().getEpochSecond() + "";
         String path = "/orders";
         JSONObject jsonBody = new JSONObject();
-        jsonBody.put("size", "0.01");
-        jsonBody.put("price", "0.100");
-        jsonBody.put("side","buy");
-        jsonBody.put("product_id","BTC-EUR");
+        jsonBody.put("funds", funds);
+        jsonBody.put("side",side);
+        jsonBody.put("type","market");
+
+        jsonBody.put("product_id",product_id);
 
         String body= jsonBody.toString();
         URL url = new URL(baseUrl + path);
@@ -124,7 +125,7 @@ public class Orders2 {
         return Base64.getEncoder().encodeToString(sha256_HMAC.doFinal(prehash.getBytes()));
     }
 
-    public static void OrderMe() throws JSONException{
+    public static void OrderMe(String funds, String side, String product_id) throws JSONException{
         Orders2 t = null;
         try {
           /*  t = new Orders2("b02f43f7d67159a3c86a9546ed25ecf8",
@@ -135,7 +136,7 @@ public class Orders2 {
                     "shaunPassWord20",
                     "QaTWz3fUBCXJp6D7pW+LMoOvwMHLeWAYG7Lqw7LhubXl8hltWOXb15SFAQPqz8ENWW7NLsA2tSVsYtXyGj9u5g==",
                     "https://api-public.sandbox.pro.coinbase.com");
-            t.getOrders();
+            t.getOrders(funds,side,product_id);
         } catch (IOException e) {
             e.printStackTrace();
         } catch (NoSuchAlgorithmException e) {
