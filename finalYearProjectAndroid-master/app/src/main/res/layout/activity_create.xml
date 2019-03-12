@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Create">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtAmount"
+            android:hint="Amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black"
+            android:textSize="34sp"
+            android:inputType="numberDecimal"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@android:color/black"
+            app:met_singleLineEllipsis="true"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtCurrency"
+            android:hint="Currency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black"
+            android:textSize="34sp"
+            android:inputType="text"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@android:color/black"
+            app:met_singleLineEllipsis="true"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtReceiver"
+            android:hint="Receiver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black"
+            android:textSize="34sp"
+            android:inputType="text"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@android:color/black"
+            app:met_singleLineEllipsis="true"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edtShopA"
+        android:hint="Shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@android:color/black"
+        android:textColor="@android:color/black"
+        android:textSize="34sp"
+        android:inputType="text"
+        app:met_baseColor="@android:color/black"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="@android:color/black"
+        app:met_singleLineEllipsis="true"
+        />
+
+    </LinearLayout>
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btnCreate"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Create"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@color/btnSignActive"
+        app:cornerRadius="4dp"
+        app:shadowColor="@android:color/darker_gray"
+        app:shadowEnabled="true"
+        app:shadowHeight="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textAfter"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Current price"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textAfterConversion"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="51dp"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</RelativeLayout>

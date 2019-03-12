@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Register">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtFirstName"
+                android:hint="First Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/black"
+                android:textColor="@android:color/black"
+                android:textSize="34sp"
+                android:inputType="text"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@android:color/black"
+                app:met_singleLineEllipsis="true"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtLastName"
+                android:hint="Last Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/black"
+                android:textColor="@android:color/black"
+                android:textSize="34sp"
+                android:inputType="textEmailAddress"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@android:color/black"
+                app:met_singleLineEllipsis="true"
+                />
+
+            <!--<EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+                -->
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtEmail"
+                android:hint="Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/black"
+                android:textColor="@android:color/black"
+                android:textSize="34sp"
+                android:inputType="textEmailAddress"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@android:color/black"
+                app:met_singleLineEllipsis="true"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtPassword"
+                android:hint="Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/black"
+                android:textColor="@android:color/black"
+                android:textSize="34sp"
+                android:inputType="textPassword"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@android:color/black"
+                app:met_singleLineEllipsis="true"
+                />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/radio_customer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Customer"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/radio_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Shop Owner"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtCompanyName"
+                android:hint="Company Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/black"
+                android:textColor="@android:color/black"
+                android:textSize="34sp"
+                android:inputType="text"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@android:color/black"
+                app:met_singleLineEllipsis="true"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtAddress"
+                android:hint="Company Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/black"
+                android:textColor="@android:color/black"
+                android:textSize="34sp"
+                android:inputType="text"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@android:color/black"
+                app:met_singleLineEllipsis="true"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtBank"
+                android:hint="Company Bank Details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/black"
+                android:textColor="@android:color/black"
+                android:textSize="34sp"
+                android:inputType="text"
+                app:met_baseColor="@android:color/black"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@android:color/black"
+                app:met_singleLineEllipsis="true"
+                />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnRegister"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Register"
+            android:textColor="@android:color/white"
+            app:backgroundTint="@color/btnRegister"
+            app:cornerRadius="4dp"
+            app:shadowColor="@android:color/darker_gray"
+            app:shadowEnabled="true"
+            app:shadowHeight="5dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

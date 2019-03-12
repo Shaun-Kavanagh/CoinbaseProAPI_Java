@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "550055613410",
+    "firebase_url": "https://finalyearapp-a2.firebaseio.com",
+    "project_id": "finalyearapp-a2",
+    "storage_bucket": "finalyearapp-a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:550055613410:android:9d3c9db546d529fc",
+        "android_client_info": {
+          "package_name": "project.finalyearapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "550055613410-hkg9s12a4fch78dvvlqrctll3l1kam3b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "project.finalyearapp",
+            "certificate_hash": "fe538d62681fa2d92f9400c4c797320e2a2d5707"
+          }
+        },
+        {
+          "client_id": "550055613410-rj92q00nc0sg8vdrg5qesklbmtmid08c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSWav8NgLF4C3WVr8eIleIL4umfAokJHk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "550055613410-rj92q00nc0sg8vdrg5qesklbmtmid08c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

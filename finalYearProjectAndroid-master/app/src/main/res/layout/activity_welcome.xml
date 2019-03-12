@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Welcome">
+
+    <!--<LinearLayout-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="160dp"-->
+        <!--android:background="@color/overlayBackground"-->
+        <!--android:gravity="bottom"-->
+        <!--android:paddingBottom="16dp"-->
+        <!--android:paddingLeft="16dp"-->
+        <!--android:paddingRight="16dp"-->
+        <!--android:paddingTop="16dp"-->
+        <!--android:theme="@style/ThemeOverlay.AppCompat.Dark">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtFullName"-->
+            <!--android:text="UsersName"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingTop="16dp"-->
+            <!--android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnMvCreate"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Create Transaction"
+            android:textColor="@android:color/white"
+            app:backgroundTint="@color/btnRegister"
+            app:cornerRadius="4dp"
+            app:shadowColor="@android:color/darker_gray"
+            app:shadowEnabled="true"
+            app:shadowHeight="5dp" />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnMvView"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="View Transaction"
+            android:textColor="@android:color/white"
+            app:backgroundTint="@color/btnRegister"
+            app:cornerRadius="4dp"
+            app:shadowColor="@android:color/darker_gray"
+            app:shadowEnabled="true"
+            app:shadowHeight="5dp" />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnMvRequest"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Request Transaction"
+            android:textColor="@android:color/white"
+            app:backgroundTint="@color/btnRegister"
+            app:cornerRadius="4dp"
+            app:shadowColor="@android:color/darker_gray"
+            app:shadowEnabled="true"
+            app:shadowHeight="5dp" />
+
+    </LinearLayout>
+
+    <!--<EditText-->
+        <!--android:id="@+id/editTextEmail"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="104dp"-->
+        <!--android:ems="10"-->
+        <!--android:inputType="textPersonName"-->
+        <!--tools:text="email" />-->
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FinalYearApp</string>
+    <string name="slogan">Transfer Cash Instantly</string>
+    <string name="title_activity_welcome">Welcome</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="dialog_approve">Are you sure you want to approve this transaction?</string>
+    <string name="dialog_yes">Approve</string>
+    <string name="dialog_cancel">Cancel</string>
+</resources>
